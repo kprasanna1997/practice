@@ -10,5 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
+  @Input() backgroundColor: string = 'blue';
   @Input() buttonState: ButtonState = new ButtonState();
 }

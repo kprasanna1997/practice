@@ -2,8 +2,12 @@
   <h1>Counter {{ count$ | async }}</h1>
 
   <div class="button-container">
-    <app-button [backgroundColor]="'green'">Increment</app-button>
-    <app-button> Decrement</app-button>
-    <app-button [backgroundColor]="'orange'"> Reset</app-button>
+    <app-button (buttonClicked$)="increment()" [backgroundColor]="'green'"
+      >Increment</app-button
+    >
+    <app-button (buttonClicked$)="decrement()"> Decrement</app-button>
+    <app-button (buttonClicked$)="reset()" [backgroundColor]="'orange'">
+      Reset</app-button
+    >
   </div>
 </div>

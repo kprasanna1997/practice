@@ -1,5 +1,8 @@
 <div class="button-container" [style.backgroundColor]="backgroundColor">
-  <button *ngIf="!buttonState.disabled; else spinner">
+  <button
+    (click)="buttonClicked$.emit()"
+    *ngIf="!buttonState.disabled; else spinner"
+  >
     <ng-content></ng-content>
   </button>
 

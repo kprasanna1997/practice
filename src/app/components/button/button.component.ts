@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ButtonState } from '../../classes/button-state';
 import { CommonModule } from '@angular/common';
 
@@ -12,4 +12,6 @@ import { CommonModule } from '@angular/common';
 export class ButtonComponent {
   @Input() backgroundColor: string = 'blue';
   @Input() buttonState: ButtonState = new ButtonState();
+
+  @Output() buttonClicked$: EventEmitter<void> = new EventEmitter<void>();
 }

@@ -1,0 +1,16 @@
+.counter-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+
+  h1 {
+    color: black;
+    font-weight: 700;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

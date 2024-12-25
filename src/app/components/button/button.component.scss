@@ -1,0 +1,39 @@
+.button-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
+  .spinner::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

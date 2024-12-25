@@ -1,1 +1,9 @@
-<p>button works!</p>
+<div class="button-container">
+  <button *ngIf="!buttonState.disabled; else spinner">
+    <ng-content></ng-content>
+  </button>
+
+  <ng-template #spinner>
+    <span class="spinner"> </span>
+  </ng-template>
+</div>

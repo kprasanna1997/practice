@@ -1,0 +1,24 @@
+<div class="product-wrapper">
+  <h2 class="product-name">{{ product.title }}</h2>
+  <img class="product-image" [src]="product.image" />
+  <h5>{{ product.price }}</h5>
+  <h5>{{ product.quantity }}</h5>
+
+  <div class="cart-wrapper">
+    <button
+      class="cart-increment"
+      (click)="incrementProductCartClicked$.emit()"
+    >
+      +
+    </button>
+    <button class="add-to-cart" (click)="addToCartClicked$.emit()">
+      Add To Cart
+    </button>
+    <button
+      class="cart-decrement"
+      (click)="decrementProductCartClicked$.emit()"
+    >
+      -
+    </button>
+  </div>
+</div>

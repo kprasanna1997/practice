@@ -1,0 +1,10 @@
+<div class="product-list-wrapper">
+  <ng-container *ngFor="let product of products$ | async">
+    <app-product
+      [product]="product"
+      (addToCartClicked$)="addToCart(product)"
+      (incrementProductCartClicked$)="incrementProductCart(product.id)"
+      (decrementProductCartClicked$)="decrementProductCart(product)"
+    ></app-product>
+  </ng-container>
+</div>

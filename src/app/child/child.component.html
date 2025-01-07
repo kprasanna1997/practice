@@ -1,1 +1,30 @@
-<p>child works!</p>
+<!-- @if(number1>number2){
+<p>{{ number1 }} is greater than {{ number2 }}</p>
+}@else if (number2>number1) {
+<p>{{ number2 }} is greater than {{ number1 }}</p>
+}@else{
+<p>Numbers are equal</p>
+} @for (num of array; track $index;let even=$even;let odd=$odd;let
+count=$count;let first=$first;let last=$last) {
+<p>Current value : {{ num }}</p>
+@if (odd) {
+<p>Odd Position : {{ odd }}</p>
+}@else if (even) {
+<p>Even Position : {{ even }}</p>
+} @if (first) {
+<p>Fist element : {{ first }}</p>
+}@else if (last) {
+<p>Last Position : {{ first }}</p>
+<p>Count : {{ count }}</p>
+} }  -->
+@switch (letter) { @case ('a') {
+<p>A for Apple</p>
+} @case ('b') {
+<p>B for Ball</p>
+} @case ('c') {
+<p>C for Car</p>
+} @case ('d') {
+<p>D for Donkey</p>
+} @case ('e') {
+<p>E for Elephant</p>
+} }

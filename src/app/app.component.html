@@ -19,33 +19,36 @@
 <h5>Failed to load child component</h5>
 }
 
-<!-- On interaction -->
-@defer(on interaction){
+<!-- @defer(on interaction){
 <app-child></app-child>
 } @placeholder {
 <h5>Placeholder (Click on me to render)</h5>
 }
-<!-- On Hover -->
+
+---------------------------------------
 @defer(on hover){
 <app-child></app-child>
 } @placeholder {
 <h5>Placeholder (hover on me to render)</h5>
 }
-<!-- On timer -->
+
+---------------------------------------
 @defer(on timer(5s)){
 <app-child></app-child>
 }@loading(minimum 2s) {
 <h5>Loading</h5>
 }
-<!-- On Hover -->
+
+---------------------------------------
 @defer(on idle){
 <app-child class="scroll-placeholder"></app-child>
 }
-<!-- On viewport -->
+
+---------------------------------------
 @defer(on viewport){
 <app-child></app-child>
 }@placeholder{
 <h5>Placeholder enter viewport</h5>
 }@loading(minimum 2s) {
 <h5>Loading</h5>
-}
+} -->
